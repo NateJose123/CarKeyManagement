@@ -19,7 +19,7 @@ class CreateCarKeysTable extends Migration
             $table->integer('CarKeyNumber');
             $table->string('CarModel');
             $table->string('CarYear');
-            $table->text('AdditionalInfo');    
+            $table->text('AdditionalInfo')->nullable();    
 
         });
     }
